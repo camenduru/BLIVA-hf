@@ -37,9 +37,9 @@ class BaseModel(nn.Module):
             cached_file = download_cached_file(
                 url_or_filename, check_hash=False, progress=True
             )
-            checkpoint = torch.load(cached_file, map_location="cuda") #hack cpu
+            checkpoint = torch.load(cached_file, map_location="cpu") 
         elif os.path.isfile(url_or_filename):
-            checkpoint = torch.load(url_or_filename, map_location="cuda") #hack cpu
+            checkpoint = torch.load(url_or_filename, map_location="cpu")
         else:
             raise RuntimeError("checkpoint url or path is invalid")
 
