@@ -1,0 +1,7 @@
+--extra-index-url https://download.pytorch.org/whl/cu113
+torch==1.12.1
+torchvision==0.13.1
+salesforce-lavis
+git+https://github.com/huggingface/transformers.git
+accelerate
+# bitsandbytes

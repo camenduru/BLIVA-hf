@@ -1,6 +1,6 @@
 ---
 title: BLIVA
-emoji: 😻
+emoji: 🚀
 colorFrom: purple
 colorTo: red
 sdk: gradio
